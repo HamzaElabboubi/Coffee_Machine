@@ -1,95 +1,55 @@
-Coffee Machine 🏆☕
+☕ Coffee Machine – Python OOP Project
 
-A simple Python program that simulates a Coffee Machine. The machine can prepare espresso, latte, and cappuccino, handle coin transactions, and check resources.
+Ce projet simule une machine à café en utilisant la programmation orientée objet (OOP) en Python.
+L’utilisateur peut choisir entre plusieurs boissons, payer, et voir un rapport sur les ressources disponibles.
 
-Features ✨
+📂 Structure du projet
+project/
+│── main.py
+│── menu.py
+│── coffee_maker.py
+│── money_machine.py
+│── README.md
 
-✅ Choose between espresso, latte, or cappuccino
+🚀 Fonctionnalités
 
-✅ Check remaining resources with report command
+Choisir une boisson : espresso, latte, cappuccino
 
-✅ Accept coins: quarters, dimes, nickels, pennies
+Vérification automatique des ressources nécessaires
 
-✅ Handle insufficient resources or money
+Paiement en pièces (simulateur)
 
-✅ Return change when needed
+Préparation du café
 
-✅ Stop the machine with off command
+Commandes spéciales :
 
-Getting Started 🚀
-Prerequisites
+report → Affiche les ressources + argent
 
-Python 3.x installed on your machine
+off → Éteint la machine
 
-How to Run
+🧠 Technologies et concepts utilisés
 
-Clone this repository:
+Programmation orientée objet (OOP)
 
-git clone https://github.com/your-username/coffee-machine.git
+Classes et méthodes
 
+Importation de modules Python
 
-Navigate to the project folder:
+Boucles et conditions
 
-cd coffee-machine
+Gestion des ressources
 
+▶️ Comment exécuter le programme
 
-Run the program:
+Assure-toi d’avoir Python 3 installé.
 
-python coffee_machine.py
+Clone ou télécharge ce projet.
 
-How to Use ☕
+Place-toi dans le dossier du projet :
 
-Enter the type of coffee you want:
-
-What would you like? (espresso/latte/cappuccino):
-
-
-To check the machine’s resources, type:
-
-report
-
-
-To turn off the machine, type:
-
-off
+cd project
 
 
-The program will ask you to insert coins:
+Exécute :
 
-How many Quarters:
-How many Dimes:
-How many Nickles:
-How many Pennies:
-
-
-If enough money is inserted, the coffee will be prepared and change returned if necessary.
-
-Code Structure 📂
-
-MENU dictionary: contains coffee types, ingredients, and cost
-
-resources dictionary: stores the current ingredients and money
-
-verify(drink): checks if resources are enough for the selected drink
-
-get_coins(cost, drink): handles payment and returns change
-
-deduct_resources(drink): subtracts the ingredients from resources
-
-report(resources): prints the current resources
-
-Main loop: handles user input and runs the coffee machine
-
-Example 📝
-What would you like? (espresso/latte/cappuccino): latte
-Please insert coins:
-How many Quarters: 10
-How many Dimes: 0
-How many Nickles: 0
-How many Pennies: 0
-Here is $0.5 in change.
-Here is your latte. Enjoy!
-water : 100
-milk : 50
-coffee : 76
-Money : 2.5
+python main.py
